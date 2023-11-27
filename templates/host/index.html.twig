@@ -1,22 +1,46 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HostController!{% endblock %}
+{% block title %}
+<title>Homepage!</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⭐</text></svg>">
+{% endblock %}
 
 {% block body %}
 <style>
+    h1{
+        background-color: #FFFFCC;
+        justify-content: center;
+        text-align: center;
+    }
+    h5{
+        background-color: #FFFFCC;
+        text-align: center;
+    }
+    body{
+        /*background-image: url("https://i.pinimg.com/564x/88/3c/44/883c446593bed25c7f7691966ad16c1e.jpg");*/
+        color: #ffaa00;;
+    }
+    a{
+        color: #d78c00;
+        border: 2px solid #d78c00;
+        -webkit-text-stroke-width: 1px;
+    }
+
     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
 <div class="example-wrapper">
-    <img src="img/F2.jpg" width="200" height="200" align="right"/>
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <img src="https://i.pinimg.com/564x/99/a7/2a/99a72a39d9efe8317ab50355505216ee.jpg" width="200" height="200" align="right"/>
+    <h1>| {{Titulo}} |👋</h1>
+    <h5>{{Saludo}}</h5>
     
-    <p>This friendly message is coming from:</p>
+    <h1>🌻Paginas de WEB's:🌻</h1>
 
     <ul>
-        <li>Your controller at <code><a href="{{ 'C:/xampp/htdocs/WEB/1_A(Error PRUEBA)/PruebaError404/src/Controller/HostController.php'|file_link(0) }}">src/Controller/HostController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/xampp/htdocs/WEB/1_A(Error PRUEBA)/PruebaError404/templates/host/index.html.twig'|file_link(0) }}">templates/host/index.html.twig</a></code></li>
+        <p><a href="/page/10">■ Pagina n.10</a></p>
+        <p><a href="/page/20">■ Pagina n.20</a></p>
+        <p><a href="/page/30">■ Pagina n.30</a></p>
     </ul>
 </div>
 {% endblock %}

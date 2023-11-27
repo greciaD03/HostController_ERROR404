@@ -12,7 +12,8 @@ class HostController extends AbstractController
     public function index(): Response
     {
         return $this->render('host/index.html.twig', [
-            'controller_name' => 'HostController',
+            'Titulo' => '¡BIENVENIDOS!',
+            'Saludo' => '¡Buenos dias estrellitas ✨ el mundo les dice hola!',
         ]);
     }
 }
