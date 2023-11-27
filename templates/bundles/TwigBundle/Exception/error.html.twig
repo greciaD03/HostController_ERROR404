@@ -1,0 +1,17 @@
+{# templates/bundles/TwigBundle/Exception/error404.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<style>
+    p1{
+        color: red;
+    }
+</style>
+
+<img src="https://i.pinimg.com/564x/6b/5d/1b/6b5d1be9df9fe7690c07c110b5a204e2.jpg" width="200" height="200" align="right"/>
+    <h1>🚨 Página NO encontrada <p1>GENERAL</p1></h1>
+    <p>
+        No se pudo ubicar la página solicitada 🛑 Pagar por cualquier URL
+        falta de ortografía o <a href="{{ path('app_host') }}">Regresar a la página de inicio ↩</a>.
+    </p>
+{% endblock %}
